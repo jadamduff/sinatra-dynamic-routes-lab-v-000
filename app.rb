@@ -25,4 +25,22 @@ class App < Sinatra::Base
     "#{@print.join(' ')}"
   end
 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @word1 = params[:word1]
+    @word2 = params[:word2]
+    @word3 = params[:word3]
+    @word4 = params[:word4]
+    @word6 = params[:word5]
+
+    @phrase = []
+
+    @phrase << @word1  
+    @phrase << @word2
+    @phrase << @word3
+    @phrase << @word4
+    @phrase << @word6
+    @phrase = @phrase.join(' ')
+    @phrase << '.'
+  end
+  
 end
