@@ -41,6 +41,8 @@ class App < Sinatra::Base
     @phrase << @word6
     @phrase = @phrase.join(' ')
     @phrase << '.'
+
+    "#{@phrase}"
   end
 
 end
