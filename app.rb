@@ -22,9 +22,7 @@ class App < Sinatra::Base
       @print << @phrase
     end
 
-    @print.join(' ')
-
-    "#{@print}"
+    "#{@print.join(' ')}"
   end
 
 end
