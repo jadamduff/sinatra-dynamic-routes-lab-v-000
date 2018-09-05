@@ -34,7 +34,7 @@ class App < Sinatra::Base
 
     @phrase = []
 
-    @phrase << @word1  
+    @phrase << @word1
     @phrase << @word2
     @phrase << @word3
     @phrase << @word4
@@ -42,5 +42,5 @@ class App < Sinatra::Base
     @phrase = @phrase.join(' ')
     @phrase << '.'
   end
-  
+
 end
