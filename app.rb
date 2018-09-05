@@ -52,18 +52,18 @@ class App < Sinatra::Base
 
     case @operation
     when "add" || "Add"
-      "#{@numer1 + @number2}"
+      "#{@number1 + @number2}"
     when "subtract" || "Subtract"
-      "#{@numer1 - @number2}"
+      "#{@number1 - @number2}"
     when "multiply" || "Multiply"
-      "#{@numer1 * @number2}"
+      "#{@number1 * @number2}"
     when "divide" || "Divide"
-      "#{@numer1 / @number2}"
+      "#{@number1 / @number2}"
     end
-      
-      
 
-    
+
+
+
   end
 
 end
